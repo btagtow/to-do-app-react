@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TodoList from './components/TodoList' 
 import TodoForm from './components/TodoForm' 
+import HookPractice from './components/HookPractice' 
 import './App.css';
 const todosUrl = "http://localhost:3000/api/v1/todos";
 
@@ -52,6 +53,8 @@ class App extends Component {
         <h1>Todo App</h1>
         <TodoForm addTodo={this.addTodo} />
         <TodoList todos={this.state.todos} deleteTodo={this.deleteTodo}/>
+        <HookPractice />
+
       </main>
 
     )
